@@ -1,3 +1,7 @@
+<h1>Index</h1>
+<div><%= link_to "Add a new article?", new_article_path %></div><br>
+
+
 <% @articles.each do |article| %>
-  <div><%= article.title %></div>
+  <div><%= link_to article.title, article_path(article) %></div>
 <% end %>
