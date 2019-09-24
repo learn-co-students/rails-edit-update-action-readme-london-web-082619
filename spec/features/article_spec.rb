@@ -22,16 +22,16 @@ describe 'navigate' do
 end
 
 describe 'form' do
-  it 'shows a new form that submits content and redirects and prints out params' do
-    visit new_article_path
+  # it 'shows a new form that submits content and redirects and prints out params' do
+  #   visit new_article_path
 
-    fill_in 'title', with: "My article title"
-    fill_in 'description', with: "My article description"
+  #   fill_in 'title', with: "My article title"
+  #   fill_in 'description', with: "My article description"
 
-    click_on "Submit Article"
+  #   click_on "Submit Article"
 
-    expect(page).to have_content("My article title")
-  end
+  #   expect(page).to have_content("My article title")
+  # end
 
   it 'shows an edit form that submits content and redirects and prints out params' do
     @article = Article.create(title: "My Article", description: "My article desc")
